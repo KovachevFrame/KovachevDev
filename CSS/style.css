@@ -1,9 +1,127 @@
+/* Global
+--------------- */
+
 * {
-    margin: 0;
     color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
+    /* outline: 1px solid yellow; */
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    background-image: url(bgr.jpg)
+    background-image: url(../IMG/bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #1b1b1b;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation
+------------------ */
+
+#logo {
+    display: inline;
+}
+
+header {
+    background: #1b1b1b;
+    padding: 1em;
+}
+
+
+ul {
+    list-style-type: none;
+    float: right;
+    margin: -20px 2em 0 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 2em 0 0;
+    font-weight: 600;
+}
+
+li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .5em;
+        /* Hover underline effect */
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    
+    li a:hover, li a:focus {
+        background-size: 100% 2px;
+    }
+
+/* Landing Page Section
+--------------------------- */
+
+.landing-page {
+    text-align: center;
+    margin: 15% 0 0 0%;
+}
+
+.landing-page p {
+    margin: 0 0 3% 0;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.check-btn{
+    display:inline-block;
+    text-transform: uppercase;
+      font-size: 1.8em;
+      text-decoration:none;	
+      color:#fff;
+      background-color:transparent;
+      border:3px solid #fff;
+      font-weight: 500;
+      border-radius:100px;
+      padding: .4em 1em .2em 1em;
+      margin:5px;
+      background-size: 200% 100%;	
+      background-image: linear-gradient(to right, transparent 50%, #fff 50%);
+      transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+  }
+  
+ .check-btn:hover{
+      color:#1b1b1b;
+      background-color:#1b1b1b;
+      background-position: -100% 100%;
+  }
+
+/* Footer 
+--------------*/
+footer {
+    background: #1b1b1b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: .5em;
+}
+
+footer p{
+    font-size: .8em;
+    margin: 1em 1em 1em 2em;
+    display: inline;
 }
