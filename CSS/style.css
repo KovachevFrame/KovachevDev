@@ -1,9 +1,68 @@
 * {
+    display: border-box;
+    
     margin: 0;
-    color: #fff;
+    color: #FFFFFF;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 body {
-    background-image: url(bgr.jpg)
+    background-image: url(/IMG/bgr.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1b1b1b;
+
+  
+}
+
+nav {
+    float: right;
+    width: 100%;
+    background: #1b1b1b;
+
+}
+
+nav li {
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 2em;
+
+
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+footer{
+    bottom: 0;
+    background: #1b1b1b;
+    position:absolute;
+    width: 100%;
+    padding: 1em;
+}
+
+.logo{
+    margin: 2%;
+}
+
+ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5%;
+}
+
+ul li hover{
+    background: #FFFFFF
 }
